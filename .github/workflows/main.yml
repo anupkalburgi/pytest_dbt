@@ -24,23 +24,16 @@ jobs:
     - name: Set Poetry Config
       run: |
         poetry config virtualenvs.create false
-        
-    - name: Install dependencies with poetry
-      run: |
-        cd your-subfolder
-        poetry install
 
     - name: Build the package
       run: |
-        cd your-subfolder
-        poetry build
+          poetry build
 
     - name: Install package
       run: |
-        cd your-subfolder/dist
-        pip install your_package_name-*.whl
+            pip install dist/pytest_dbt-0.1.0-py3-none-any.whl
 
     - name: Run tests with pytest
       run: |
-        cd your-subfolder
+        cd jaffle_shop
         pytest

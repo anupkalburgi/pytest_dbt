@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "pytest-dbt"
+version = "0.1.0"
+description = "Unit test dbt models with standard python tooling"
+authors = ["Anup Kalburgi <anupkalburgi@gmail.com>"]
+readme = "README.md"
+license = "MPL-2.0"
+packages = [{include = "pytest_dbt"}]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Framework :: Pytest",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Operating System :: POSIX",
+  "Operating System :: Microsoft :: Windows",
+  "Operating System :: MacOS :: MacOS X",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+  "Topic :: Software Development :: Quality Assurance",
+  "Topic :: Software Development :: Testing",
+  "Topic :: Utilities",
+]
+dependencies = [
+  "pytest>=7.0.0",
+]
+dynamic = [
+  "version",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pytest = "^7.3.1"
+sqlglot = "^13.3.0"
+pandas = "^2.0.1"
+
+[tool.poetry.dev-dependencies]
+black = "^22.1.0"
+flake8 = "^4.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins.pytest11]
+pytest_dbt = "pytest_dbt.pytest_dbt"
+
+
+[tool.black]
+target-version = ['py38']
