@@ -33,9 +33,14 @@ pytest = "^7.0.0"
 sqlglot = "^13.3.0"
 pandas = "^2.0.1"
 
+
 [tool.poetry.dev-dependencies]
-black = "^22.1.0"
-flake8 = "^4.0.1"
+black = "^23.3.0"
+
+[project.urls]
+Homepage = "https://github.com/anupkalburgi/pytest_dbt"
+Tracker = "https://github.com/anupkalburgi/pytest_dbt/issues"
+Source = "https://github.com/anupkalburgi/pytest_dbt"
 
 
 [build-system]
