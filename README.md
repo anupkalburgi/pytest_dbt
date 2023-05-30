@@ -21,7 +21,7 @@ Follow these steps to use the plugin:
 [pytest]
 dbt_manifest_file_path = target/manifest.json
 ```
-4. Create tests using pytest. For instance, if we have a model [orders_size](jaffle_shop/models/orders_size.sql) and we want to confirm it has three columns, we can create a test file [test_orders_size.py](jaffle_shop/tests/test_orders_size.py) and add the following test:
+4. Create tests using pytest. For instance, if we have a model [order_size](jaffle_shop/models/order_size.sql) and we want to confirm it has three columns, we can create a test file [test_order_size.py](jaffle_shop/tests/test_order_size.py) and add the following test:
 
 ```python
 customer_no_order = [
