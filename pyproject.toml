@@ -26,9 +26,6 @@ classifiers = [
   "Topic :: Software Development :: Testing",
   "Topic :: Utilities",
 ]
-dynamic = [
-  "version",
-]
 
 [tool.poetry.dependencies]
 python = "^3.8"
