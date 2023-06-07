@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pytest-dbt"
-version = "0.1.0"
+version = "0.1.1"
 description = "Unit test dbt models with standard python tooling"
 authors = ["Anup Kalburgi <anupkalburgi@gmail.com>"]
 readme = "README.md"
@@ -20,8 +20,6 @@ classifiers = [
   "Programming Language :: Python :: 3.9",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
-  "Programming Language :: Python :: Implementation :: CPython",
-  "Programming Language :: Python :: Implementation :: PyPy",
   "Topic :: Software Development :: Quality Assurance",
   "Topic :: Software Development :: Testing",
   "Topic :: Utilities",

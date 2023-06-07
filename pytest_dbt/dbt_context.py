@@ -37,4 +37,5 @@ class DBTModelDetails:
     original_file_path: str
     compiled_path: str
     upstream_models: Set[str]
+    udfs: Set[str]
     compiled_code: str
