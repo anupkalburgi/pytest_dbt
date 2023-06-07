@@ -9,13 +9,13 @@ class DbtContextSingleton:
 
     @staticmethod
     def getInstance():
-        """ Static access method. """
+        """Static access method."""
         if DbtContextSingleton._instance is None:
             DbtContextSingleton()
         return DbtContextSingleton._instance
 
     def __init__(self):
-        """ Virtually private constructor. """
+        """Virtually private constructor."""
         if DbtContextSingleton._instance is not None:
             raise Exception("This class is a singleton!")
         else:

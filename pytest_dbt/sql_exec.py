@@ -57,7 +57,10 @@ def execute(
 
     schema = ensure_schema(schema, dialect=read)
 
-    if tables_.supported_table_args and tables_.supported_table_args != schema.supported_table_args:
+    if (
+        tables_.supported_table_args
+        and tables_.supported_table_args != schema.supported_table_args
+    ):
         raise ExecuteError("Tables must support the same table args as schema")
 
     now = time.time()
@@ -71,7 +74,7 @@ def execute(
     logger.debug("Logical Plan: %s", plan)
 
     now = time.time()
-    result = PythonExecutor(env=custom_env ,tables=tables_).execute(plan)
+    result = PythonExecutor(env=custom_env, tables=tables_).execute(plan)
 
     logger.debug("Query finished: %f", time.time() - now)
 
