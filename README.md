@@ -46,9 +46,6 @@ def test_customers_no_order():
 If your databases have defined functions, you can incorporate them into the execution. For instance, if there's a model [customer_details](jaffle_shop/models/customer_details.sql) which employs a UDF `full_name`, you can design a test file [test_customer_details.py](jaffle_shop/tests/test_udf_customer_details.py) and append the following test:
 
 ```python
-def full_name(fname, lastname):
-    return fname + " " + lastname
-
 udfs = {"full_name": lambda name, last_name: f"{name} {last_name}"}
 
 def test_customer_details():
